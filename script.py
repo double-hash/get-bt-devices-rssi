@@ -9,7 +9,8 @@ def parse_output(output):
           words = output.split()
           # check if RSSI is present
           if len(words) == 6 and words[4] == "RSSI:":
-                 # words[2] is always MAC addr
+                 # words[3] is always MAC addr
+		 # sorting MAC addr as key and RSSI as value in devices
                  devices[words[3]] = words[5]
 
 def run_command(command):
