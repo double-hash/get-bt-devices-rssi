@@ -15,7 +15,7 @@ def parse_output(output):
 
 def run_command(command):
     #opening process
-    process = subprocess.Popen(shlex.split(command), shell=True, stdout=sub$
+    process = subprocess.Popen(shlex.split(command), shell=True, stdout=subprocess.PIPE)
     #looping for getting new values
     while True:
          output = process.stdout.readline()
