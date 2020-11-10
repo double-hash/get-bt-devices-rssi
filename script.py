@@ -1,5 +1,3 @@
-  GNU nano 3.2                                               test2.py                                                        
-
 import subprocess
 import shlex
 
